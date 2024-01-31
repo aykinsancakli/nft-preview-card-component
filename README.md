@@ -21,4 +21,3 @@ The necessary source files for the project include:
 
 - `index.html`
 - `style.scss` (or `style.css`)
-- `script.js`
