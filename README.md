@@ -6,7 +6,7 @@ This project is a challenge example provided by Frontend Mentor. The main goal i
 
 ## Task
 
-Your task is to create an NFT preview card component based on the provided design specifications and styling guidelines. Additionally, implement JavaScript for the accordion functionality.
+Your task is to create an NFT preview card component based on the provided design specifications and styling guidelines.
 
 ## Technologies Used
 
