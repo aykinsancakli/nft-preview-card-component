@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line-primary: hsl(215, 32%, 27%);
+  --main-white: hsl(0, 0%, 100%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  line-height: 1;
+  background-color: var(--main-bg);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CARD */
+.card {
+  max-width: 32rem;
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 11px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  box-shadow: 0 2rem 4.8rem rgba(0, 0, 0, 0.15);
+}
+
+/* CARD HEADER */
+.card-header {
+  width: 100%;
+  display: block;
+  border-radius: 9px;
+
+  background-image: url(images/image-equilibrium.jpg);
+  background-size: cover;
+  height: 28rem;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 255, 247, 0.303);
+  height: 100%;
+  width: 100%;
+  border-radius: 9px;
+
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.card-header:hover .img-container {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* CARD BODY */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.heading-primary {
+  font-size: 2rem;
+  color: var(--main-white);
+  font-weight: 600;
+  transition: all 0.15s;
+}
+
+.heading-primary:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.card-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--soft-blue);
+  font-weight: 300;
+}
+
+/* VALUES BOX */
+.values-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.eth-value {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--cyan);
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.time-value {
+  font-size: 1.4rem;
+  color: var(--soft-blue);
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* LINE */
+.line {
+  border-top: 0.5px solid var(--line-primary);
+}
+
+/* AUTHOR BOX */
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.author-box img {
+  height: 3.2rem;
+  width: 3.2rem;
+  border: 1px solid var(--main-white);
+  border-radius: 1.6rem;
+}
+
+.author {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--soft-blue);
+}
+
+.author-name {
+  color: var(--main-white);
+  transition: all 0.15s;
+}
+
+.author-name:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
